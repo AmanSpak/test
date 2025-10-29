@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="as.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <nav class="navbar navbar-expand-lg bg-light navbar-custom">
+  <div class="container-fluid d-flex justify-content-between align-items-center navbar-custom-container">
+
+    <!-- Logo 1 -->
+    <a class="navbar-brand" href="#"><img src="navbarImages/logo.png" class="logo" alt=""></a>
+     <!-- Logo 2 for mobile -->
+     <a class="navbar-brand  d-lg-block" href="#"><img src="/navbarImages/top-logo-2.png" class="logo-2-mobile" alt=""></a>
+  
+    <!-- Toggler for mobile - MOVED BEFORE THE COLLAPSIBLE CONTENT -->
+   <button class="navbar-toggler" id="menuToggleBtn">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+
+    <!-- Logo 2 - MOVED INSIDE THE COLLAPSIBLE CONTENT FOR MOBILE -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+
+        <li class="nav-item dropdown nav-item-custom">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About Us</a>
+
+          <ul class="dropdown-menu dropdown-menu-style">
+            <li><a class="dropdown-item" href="#">Mission & Vision</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Executive Director's Message</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Our Pedagogy</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Adbisory Board</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Our Facluty & Professors of Practice</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Executive Director's Message</a></li>
+          </ul>
+        </li>
+
+
+        <!-- dropdown2 Programse-->
+        <li class="nav-item dropdown nav-item-custom">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Programs</a>
+          <ul class="dropdown-menu dropdown-menu-style"> 
+            <!-- Fixed submenu structure -->
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Degree Programmes</a>
+              <!-- <ul class="dropdown-menu dropdown-menu-style-nested">
+                <li><a class="dropdown-item" href="#">B.Sc. in Hospitality Studies</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">B.Sc. in Culinary Arts</a></li>
+               
+              </ul> -->
+            </li>
+            <li><hr class="dropdown-divider"></li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Diploma Programmes</a>
+              <!-- <ul class="dropdown-menu dropdown-menu-style-nested">
+                <li><a class="dropdown-item" href="#">Advanced Diploma in Hospitality Operations</a></li>
+                <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Advanced Diploma in Bakery,Pattiserrie & Entreprenureship</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Professional Diploma in Culinary Arts & Entreprenureship</a></li>
+
+              </ul> -->
+            </li>
+            <li><hr class="dropdown-divider"></li>
+              <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Certificate Programmes</a>
+              <!-- <ul class="dropdown-menu dropdown-menu-style-nested">
+                <li><a class="dropdown-item" href="#">B.Sc. in Hospitality Studies</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Tikkas and Kebabs</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Home Made Pasta & More</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Couples Shops & Grazzing Platter</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Budha Bowl</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Choco Delights</a></li>
+              </ul> -->
+            </li>
+           <li><hr class="dropdown-divider"></li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Workshops</a>
+              <!-- <ul class="dropdown-menu dropdown-menu-style-nested">
+                <li><a class="dropdown-item" href="#">Thai Cuisine</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Labnese Advance</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Labnese Mezze</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">The Art of Rolling</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Certificate Course  Accomodation Operations & Management</a></li>
+              </ul> -->
+            </li>
+
+          
+          </ul>
+        </li>
+
+         <!-- dropdown2 Campuses -->
+        <li class="nav-item dropdown nav-item-custom">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Campuses</a>
+          <ul class="dropdown-menu dropdown-menu-style">
+            <li><a class="dropdown-item" href="#">Residential Campus - Lonavala</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Day Learning Campus - Mumbai</a></li>
+          </ul>
+        </li>
+
+        <!-- dropdown2 Discover A Star -->
+        <li class="nav-item dropdown nav-item-custom">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Discover A-Star</a>
+          <ul class="dropdown-menu dropdown-menu-style">
+            <li><a class="dropdown-item" href="#">Gallery</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Media Center</a></li>
+          </ul>
+        </li>
+
+         <li class="nav-item dropdown nav-item-custom">
+          <a class="nav-link " href="#" data-bs-toggle="dropdown">Admissions</a>
+        </li>
+
+       
+
+        
+
+        <!-- dropdown1 -->
+        <li class="nav-item dropdown nav-item-custom">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Connect</a>
+          <ul class="dropdown-menu dropdown-menu-style">
+            <li><a class="dropdown-item" href="#">Careers at A-Star</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+      <!-- Logo 2 - NOW INSIDE THE COLLAPSIBLE CONTENT FOR MOBILE -->
+      <a class="navbar-brand d-lg-none mx-auto" href="#"><img src="/navbarImages/top-logo-2.png" class="logo-2" alt=""></a>
+    </div>
+
+    <!-- Logo 2 - FOR DESKTOP ONLY -->
+    <a class="navbar-brand d-none d-lg-block" href="#"><img src="/navbarImages/top-logo-2.png" class="logo-2" alt=""></a>
+
+  </div>
+</nav>
+
+</body>
+</html>

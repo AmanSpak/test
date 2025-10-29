@@ -1,0 +1,230 @@
+ 
+    .body{
+        font-family: "Commissioner-Medium";
+    }
+
+     .navbar-custom{
+           box-shadow: -1px 6px 13px rgb(41, 40, 40);
+     }
+
+
+   
+#navbarNav {
+  display: none; 
+
+      /* margin-right:86px ; */
+      background-color: white;
+      border-bottom-right-radius: px;
+border-bottom-left-radius: 5px; 
+   
+} 
+
+#navbarNav.show {
+  display: block; 
+}
+
+
+
+#navbarNav.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  margin-top: -8px;
+}
+
+
+.navbar-nav{
+    margin: 7px;
+}
+
+    .logo {
+        width: 93px;
+        height: auto;
+        margin-left: 15px;
+    }
+
+    .logo-2 {
+        width: 200px;
+        height: auto;
+    }
+
+     .logo-2-mobile {
+        width: 200px;
+        height: auto;
+    }
+
+    .dropdown-menu-style {
+        border: 0;
+        background-color: #ca933b;
+        margin-top: 6px;
+    }
+
+    .dropdown-menu-style::after{
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      z-index: -5;
+      position: absolute;
+      top: -5px;
+      transform: rotate(45deg);
+      left: 10%;
+       background-color: #ca933b;
+    }
+
+.dropdown-menu-style-nested{
+      
+      border: 0;
+       background-color: #ca933b;
+    }
+      .dropdown-menu-style-nested::after{
+      content: "";
+      width: 20px;
+      height: 20px;
+      
+      z-index: -5;
+      position: absolute;
+      top: 5%;
+      transform: rotate(45deg);
+      left: -2%;
+         background-color: #ca933b;
+    }
+
+    .dropdown-item:hover {
+       background-color: #ca933b;
+        color: #fff;
+    }
+
+    
+  
+   .nav-item-custom{
+    margin: 0%;
+    font-size: 15px;
+    font-weight: 510;
+    font-family: "Commissioner-Medium";
+    color:rgb(70, 70, 70) ;
+   }
+
+
+   .dropdown-menu li {
+     margin: 1%;
+    font-size: 15px;
+    font-family: "Commissioner-Medium";
+    font-weight: 700;
+    color:rgb(70, 70, 70) ;
+    }
+
+    .dropdown-menu li a{
+        font-weight: 550;
+        color:rgb(70, 70, 70) ;
+        
+    }   
+    /* Desktop hover for dropdowns */
+    @media (min-width: 992px) {
+
+       .dropdown-menu-style::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -5px;
+    left: 10%;
+    transform: rotate(45deg);
+    background-color: #ca933b;
+    z-index: -5;
+  }
+
+
+        .dropdown:hover > .dropdown-menu {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+        .dropdown-menu {
+            display: block;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease;
+        }
+
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 107%;
+            margin-top: 2px;
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease;
+        }
+
+        /* FIXED: Ensure submenu appears on hover */
+        .dropdown-submenu:hover > .dropdown-menu {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* Prevent the main dropdown from closing when hovering over submenu */
+        .dropdown-menu .dropdown-submenu:hover > .dropdown-menu {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .logo-2-mobile{
+          display: none;
+        }
+
+   
+    }
+
+
+    /* Mobile nested submenu stack */
+    @media (max-width: 991.98px) {
+
+
+        .dropdown-submenu .dropdown-menu {
+            position: static;
+            width: 100%;
+            margin-left: 15px;
+            border: none !important;
+            box-shadow: none !important;
+        }
+
+        .logo-2{
+              display: none;
+        }
+
+        .dropdown-menu-style::after {
+    content: none !important;
+    display: none !important;
+  }
+
+       
+
+    }
+
+    .dropdown-toggle.dropdown-item.show::after {
+        transform: rotate(90deg);
+    }
+    
+    /* Submenu arrow for desktop */
+  
+
+    .dropdown-submenu > .dropdown-toggle::after {
+  transform: rotate(-90deg); 
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+ 
+.navbar-custom{
+    z-index: 20;
+    height: 90px;
+}
+
+
+ 
